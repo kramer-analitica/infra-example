@@ -1,0 +1,5 @@
+%syntax-version=1.0.0
+%project=flipr
+%uri=https://github.com/sqitchers/sqitch-intro/
+
+001-first-migration 2024-04-22T13:24:44Z Analitica <analitica@pop-os> # Init migration

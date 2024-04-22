@@ -1,0 +1,19 @@
+services:
+  db:
+    image: postgres
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 123456
+    ports:
+      - 5432:5432
+    restart: always
+  
+  xampp:
+    image: analitica/xampp:7.4.33-mongo-pgsql
+    build: .
+    ports:
+      - 80:80
+      - 443:443
+    volumes:
+      - ./src:/opt/lampp/htdocs
+    restart: always
