@@ -17,3 +17,5 @@ services:
     volumes:
       - ./src:/opt/lampp/htdocs
     restart: always
+    extra_hosts:
+      - "host.docker.internal:172.17.0.1"
